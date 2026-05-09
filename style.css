@@ -1,0 +1,64 @@
+/* إعدادات عامة وتطبيق خط Tajawal[span_6](end_span) */
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #fff5f5;
+    color: #333;
+}
+
+
+/* تخصيص هوية الألوان[span_8](end_span) */
+
+.navbar,
+.bg-warning,
+footer {
+    background-color: #ffc107 !important;
+    /* اللون الأصفر الحيوي الظاهر في الصور */
+}
+
+
+/* تنسيق الصور لتكون متجاوبة[span_9](end_span) */
+
+.hero-section img {
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/* تأثيرات على الكروت (Cards)[span_10](end_span) */
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+
+/* تخصيص الشارات (Badges)[span_12](end_span)[span_13](end_span) */
+
+.badge {
+    font-weight: normal;
+}
+
+
+/* التجاوب (Responsive) للموبايل[span_14](end_span)[span_15](end_span) */
+
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+    }
+    .display-4 {
+        font-size: 2rem;
+    }
+}
+
+
+/* تنسيق التذييل */
+
+footer a:hover {
+    color: #fff !important;
+}

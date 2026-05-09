@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جميع الفعاليات - دليل SVU</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        main {
+            min-height: 70vh;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">دليل فعاليات سوريا</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="events.html">الفعاليات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">حول الموقع</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="container my-5">
+
+        <h2 class="text-center mb-4">جميع الفعاليات</h2>
+
+        <div class="row g-3 mb-4 p-3 bg-white rounded shadow-sm">
+
+            <div class="col-md-4">
+                <input type="text" id="searchInput" class="form-control" placeholder="ابحث عن فعالية...">
+            </div>
+
+            <div class="col-md-3">
+                <select id="categoryFilter" class="form-select">
+                    <option value="">عرض الكل</option>
+                    <option value="ثقافي">ثقافي</option>
+                    <option value="رياضي">رياضي</option>
+                    <option value="موسيقي">موسيقي</option>
+                    <option value="تعليمي">تعليمي</option>
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <input type="date" id="dateFilter" class="form-control">
+            </div>
+
+            <div class="col-md-2">
+                <input type="text" id="locationFilter" class="form-control" placeholder="الموقع">
+            </div>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div id="noResults" class="text-center text-muted my-5 d-none">
+                لا توجد نتائج مطابقة للبحث
+            </div>
+
+            <div class="col-md-4 event-card" data-title="معرض دمشق الدولي" data-category="ثقافي" data-date="2026-05-28"
+                data-location="دمشق">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="image/t10.jpg" class="card-img-top">
+
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">ثقافي</span>
+                        <h5>معرض دمشق الدولي</h5>
+                        <p class="text-muted small">دمشق</p>
+                    </div>
+
+                    <div class="card-footer d-flex justify-content-between">
+                        <small>2026-05-28</small>
+                        <a href="event.html?id=1" class="btn btn-sm btn-outline-dark">التفاصيل</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 event-card" data-title="معرض المعلومات" data-category="تعليمي" data-date="2026-04-28"
+                data-location="دمشق">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="image/t9.jpg" class="card-img-top">
+
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">تعليمي</span>
+                        <h5>معرض المعلومات</h5>
+                        <p class="text-muted small">دمشق</p>
+                    </div>
+
+                    <div class="card-footer d-flex justify-content-between">
+                        <small>2026-04-28</small>
+                        <a href="event.html?id=2" class="btn btn-sm btn-outline-dark">التفاصيل</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-md-4 event-card" data-title="مسابقة البرمجة التنافسية" data-category="تعليمي"
+                data-date="2026-04-28" data-location="دمشق">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="image/SCPC_Event.jpg" class="card-img-top">
+
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">تعليمي</span>
+                        <h5>مسابقة البرمجة التنافسية</h5>
+                        <p class="text-muted small">دمشق</p>
+                    </div>
+
+                    <div class="card-footer d-flex justify-content-between">
+                        <small>2026-04-28</small>
+                        <a href="event.html?id=4" class="btn btn-sm btn-outline-dark">التفاصيل</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 event-card" data-title="بطولة كرة القدم" data-category="رياضي" data-date="2026-06-10"
+                data-location="حلب">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="image/t8.jpg" class="card-img-top">
+
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">رياضي</span>
+                        <h5>بطولة كرة القدم</h5>
+                        <p class="text-muted small">حلب</p>
+                    </div>
+
+                    <div class="card-footer d-flex justify-content-between">
+                        <small>2026-06-10</small>
+                        <a href="event.html?id=3" class="btn btn-sm btn-outline-dark">التفاصيل</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="bg-warning py-4 text-center mt-5">
+        <p class="mb-0">© SVU Events Guide - جميع الحقوق محفوظة 2026</p>
+    </footer>
+
+    <script>
+        const searchInput = document.getElementById("searchInput");
+        const categoryFilter = document.getElementById("categoryFilter");
+        const dateFilter = document.getElementById("dateFilter");
+        const locationFilter = document.getElementById("locationFilter");
+
+        const events = document.querySelectorAll(".event-card");
+        const noResults = document.getElementById("noResults");
+
+        function filterEvents() {
+
+            let hasResults = false;
+
+            const search = searchInput.value.toLowerCase();
+            const category = categoryFilter.value;
+            const date = dateFilter.value;
+            const location = locationFilter.value.toLowerCase();
+
+            events.forEach(event => {
+
+                const title = event.dataset.title.toLowerCase();
+                const cat = event.dataset.category;
+                const d = event.dataset.date;
+                const loc = event.dataset.location.toLowerCase();
+
+                let show =
+                    (!search || title.includes(search)) &&
+                    (!category || cat === category) &&
+                    (!date || d === date) &&
+                    (!location || loc.includes(location));
+
+                event.style.display = show ? "" : "none";
+
+                if (show) hasResults = true;
+            });
+
+            noResults.classList.toggle("d-none", hasResults);
+        }
+
+        searchInput.addEventListener("input", filterEvents);
+        categoryFilter.addEventListener("change", filterEvents);
+        dateFilter.addEventListener("change", filterEvents);
+        locationFilter.addEventListener("input", filterEvents);
+    </script>
+
+</body>
+
+</html>
